@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SB MOVIE</title>
+  
+  
+    <link rel="icon" type="image/png" href="20220312_095629.png"> 
+    
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+       
+    
+   
+    
+  <!-- HTML -->
+ 
+  <!-- Custom Styles -->
+  <style type="text/css">
+  *{
+  box-sizing:  border-box;
+  font-size: sans-serif;
+width: 100%;
+  }
+  html, body{
+  overflow-x:hidden;
+  height:100%;
+  
+  }
+  body{
+  font-family:arial, sans-serif;
+  background:white;
+  padding:0px;
+  margin:0px;
+  }
+  .header{
+  background :#1E1E1E;
+  width:100%;
+  height:45px;
+  position :fixed;
+  z-index:10;
+  }
+  
+  
+  
+  .headline{
+  width: 40px;
+  margin-left: 80px;
+  margin-top: 5px;
+  border-radius: 3px;
+  height: 25px;
+  }
+  
+ 
+
+ 
+  
+  
+
+
+ .headna{
+   width: 32%;
+   margin-left: 55%;
+   font-size: 19px;
+   border: none;
+   background-color: #19191919;
+   margin-top: 5px;
+   color: blue;
+   height: 25px;
+   
+   
+ }
+.headname{
+  color: white;
+  margin-top: -24px;
+  font-size: 250%;
+  margin-left: 20%;
+  font-family: sans-serif;
+  font-weight: 800;
+  display: block
+}
+
+input#openSidebarMenu{
+  width: 0px
+}
+.eye{
+  width: 10%;
+  height: 90%;
+  margin-left: 90%;
+  background-color: #FC0191;
+  border: none;
+  color: #fff;
+  margin-top: 3px;
+  border-radius: 10px
+}
+.iii{
+   width: 112.5%;
+   margin-left: -40px;
+   color: white;
+  margin-top: 20px;
+   
+ }
+ 
+ .baccolor{
+   background-color: white;
+   
+ }
+
+
+
+
+
+
+  
+
+
+
+.iiill{
+  width: 65%;
+  border-radius: 7%;
+  margin-top: 15%;
+  text-align: center
+}
+
+
+.accordion {
+  background-color: #aaa;
+  color: #fff;
+  padding: 0px;
+  width: 75%;
+  height: 40%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  border-radius: 10%;
+  margin-left: 8%;
+  box-shadow: inset 0px 0px 0px 1px #fff;
+  font-size: 16px;
+  
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #aaa;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 1%;
+  width: 65%;
+  margin-left: 13.5%;
+ height: 145%
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus7" sign (+) */
+  font-size: 75%;
+  color: #777;
+  float: right;
+  margin-left: 0px;
+  margin-top: 5%
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.ioio{
+  width: 16%;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: -10%;
+}
+
+
+.mobile-bottom-nav{
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1000;
+	
+	//give nav it's own compsite layer
+	will-change:transform;
+	transform: translateZ(0);
+	
+	display:flex;	
+	
+	height:50px;
+	
+	box-shadow: 0 -2px 5px -2px #333;
+	background-color:#1E1E1E;
+}
+.font1{
+  margin-left: 7%;
+  margin-top: 4px;
+  background-color: #1E1E1E;
+  color: #fff;
+  display: block;
+}
+	.font2{
+  margin-left: 4%;
+  margin-top: 4px;
+  background-color: #1E1E1E;
+  color: black
+}.font3{
+  margin-left: 4.2%;
+  margin-top: 3px;
+  background-color: #1E1E1E;
+  color: black;
+  
+}.font4{
+  margin-left: 4%;
+  margin-top: 4px;
+  background-color: #1E1E1E;
+  color: black
+}
+.font5{
+  text-align: right;
+  margin-left: 40%;
+  margin-top: 3.5px;
+  background-color: #1E1E1E;
+  color: black
+}
+.showLeft{
+                    background-color: #1E1E1E !important;
+                    border:0px solid #FC0191 !important;
+                    text-shadow: none !important;
+                    color:#fff !important;
+                    padding:0%;
+                    
+                }
+
+                .icons li {
+                    background: none repeat scroll 0 0 #fff;
+                    height: 7px;
+                    width: 6px;
+                    line-height: 0px;
+                    list-style: none outside none;
+                    margin-right: 15px;
+                    margin-top: 10px;
+                    vertical-align: top;
+                    border-radius:50%;
+                  pointer-events: none;
+                  margin: 0 auto
+                }
+
+                .btn-left {
+                    left: 0.4em;
+                }
+
+                .btn-right {
+                    right: 0.4em;
+                }
+
+                .btn-left, .btn-right {
+                    position: absolute;
+                    top:0.24em;
+                    
+                }
+
+                .dropbtn {
+                    background-color: #1E1E1E;
+                    position: fixed;
+                    color: white;
+                    font-size: 0px;
+                    border: 0px;
+                    width: 35px;
+                    height: 15px;
+                    margin-top: 5px;
+                    margin: 17px
+                 
+                }
+
+                .dropbtn:hover, .dropbtn:focus {
+                    background-color: #FC0191;
+                }
+
+                .dropdown {
+                    position: absolute;
+                    display: inline-block;
+                    right: 0.4em;
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: relative;
+                    margin-top: 60%;
+                    background-color: #fff;
+                    min-width: 100px;
+                    overflow: auto;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 5;
+                    width: 70%;
+                    height: 70%;
+                    margin-left: 31%;
+                    margin-top: 16%
+                }
+
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                .dropdown a:hover {background-color: #f1f1f1;
+                 
+                }
+
+                .show {display:block;}
+
+
+.panel b{
+  margin-left: 5px;
+  margin-top: -25px;
+  background-color: white;
+  width: 80%;
+  color: black;
+  font-size: 13px
+}
+
+.dropdown-content{
+  box-shadow: 0px 0px 7px black;
+  width: 70%;
+  
+}
+
+.mobile-bottom-nav{
+  box-shadow:  0px 0px 4px black;
+  
+}
+
+
+
+
+
+html,
+     body {
+       position: relative;
+       height: 100%;
+          background-color:#101010;      }
+          body {
+       background: #101010;
+       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+       font-size: 14px;
+       color: #101010;
+       margin: 0;
+       padding: 0;
+       background-color: #101010;
+     }
+     
+     
+     .swiper {
+       width: 95%;
+       height: 25%;
+      
+     }.swiper-slide {
+       text-align: center;
+       font-size: 1px;
+       background: #101010;display: -webkit-box;
+       display: -ms-flexbox;
+       display: -webkit-flex;
+       display: flex;
+       -webkit-box-pack: center;
+       -ms-flex-pack: center;
+       -webkit-justify-content: center;
+       justify-content: center;
+       -webkit-box-align: center;
+       -ms-flex-align: center;
+       -webkit-align-items: center;
+       align-items: center;
+     }.swiper-slide img {
+       display: block;
+       width: 90%;
+       height: 100%;
+       object-fit: cover;
+       border-radius: 5px;
+       margin: 0 auto;
+       display: block
+     }
+     
+     
+     
+     
+     
+     
+     
+     .sidebarIconToggle{
+  background :none;
+  width:22px;
+  height:22px;
+  position :absolute;
+  z-index:200;
+  top:6px;
+  left:15px;
+  transform: translateX(10px)
+  }
+  #openSidebarMenu:checked ~ #sidebarMenu
+  
+  
+    .main{
+  height: 100%;
+  margin-top:60px;
+  padding:10px 50px;
+  }
+  
+  
+
+  #sidebarMenu{
+  height:95%;
+  position :fixed;
+  left:0;
+  top:-15px;
+  width:250px;
+  margin-top:60px;
+  background :black;
+  transform: translateX(-250px);
+  transition: transform 250ms ease-in-out;
+  }
+  
+  #openSidebarMenu:checked ~ #sidebarMenu
+  {transform: translateX(0px)}
+  
+  
+  .menu{
+  list-style: none;
+  padding:0;
+  margin:0;
+  width: 100%;
+  
+  }
+  .menu li{
+  color:white;
+  border-bottom: 1px solid rgba(255, 255, 255,0.10);
+  width: 80%;
+  height: 50%;
+  font-size: 95%;
+  }
+  .menu li a {
+  color:white;
+  display:block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding:20px;
+  width: 125%;
+  height: 50px;
+  font-family: sans-serif;
+  }
+  .sidebarIconToggle{
+  width :45px;
+  height: 25px;
+  position: absolute;
+  z-index: 20000;
+  top: 2px;
+  left: 8px;
+  }
+  .sidebarIconToggle span{
+  display: block;
+  background-color: white;
+  width:25px;
+  height: 3px;
+  margin: 5px;
+  background: white;
+  margin-left: 5px
+  }
+  .headline{
+  width: 40px;
+  margin-left: 80px;
+  margin-top: 5px;
+  border-radius: 3px;
+  height: 25px;
+  }
+  
+ 
+label.sidebarIconToggle{
+  margin-top: 10px;
+  margin-left: -7px;
+  
+}
+ span{
+   border-radius: 5px;
+   width: 5px
+ }
+  
+  .pry{
+  color: #959595;
+  font-size: 80%;
+  margin-left: 24%;
+  font-family: sans-serif;
+  margin-top: -15%;
+  transition: 10ms
+  }
+  
+  
+  
+  
+  .baccolor{
+   background-color: white;
+   
+ }
+
+.connection {
+  color: black;
+  width: 65%;
+margin-top: 0px;
+font-size: 70%;
+margin-left: 18%;
+display: block;
+}
+.connection1{
+  color: black;
+  width: 65%;
+  font-size: 68%;
+  margin-left: 18%;
+  margin-top: -1px;
+  display: block;
+}
+
+
+
+
+  .flip-box {
+  background-color: transparent;
+  width: 65%;
+  height: 160px;
+  border: 2px solid #f1f1f1;
+  perspective: 1000px;
+  margin-left: 35px;
+  background-color: black;
+  margin-top: 0%;
+  border-radius: 20%;
+  background-color: cyan
+  /* Remove this if you don't want the 3D effect */
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 20%
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #bbb;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 20%
+}
+
+
+
+
+.iiill{
+  width: 65%;
+  border-radius: 7%;
+  margin-top: 15%;
+  text-align: center
+}
+
+
+.accordion {
+  background-color: #aaa;
+  color: #fff;
+  padding: 0px;
+  width: 75%;
+  height: 40%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  border-radius: 10%;
+  margin-left: 8%;
+  box-shadow: inset 0px 0px 0px 1px #fff;
+  font-size: 16px;
+  
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #aaa;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 1%;
+  width: 65%;
+  margin-left: 13.5%;
+ height: 145%
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus7" sign (+) */
+  font-size: 75%;
+  color: #777;
+  float: right;
+  margin-left: 0px;
+  margin-top: 5%
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+
+.divv:hover {
+ transform: scale(1.1);
+}
+.divvv:hover {
+  color: cyan
+}
+
+.div1:hover {
+  transform: rotate(-320deg) translate(13px) scaleX(1.5);
+ background-color: #fff;
+}
+
+
+
+
+ </style>
+</head>
+
+<body>
+  <div class="header">
+    
+      
+ 
+       <div class="dropdown">
+       <!-- three dots -->
+       <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+       <li style="width: 4px;
+       height: 4px;margin-top: 0px"></li>
+       <li style="width: 4px;
+       height: 4px;margin-top: 3px"></li>
+       <li style="width: 4px;
+       height: 4px;margin-top: 3px"></li>
+       
+       
+       </ul>
+       <!-- menu -->
+         <div id="myDropdown" class="dropdown-content" style="background-color: cyan;border-radius: 5px;margin-top: 45px">
+
+       
+       <a href="index.html" style="color: white;text-align: center">
+       
+       <img src="home.png" style="width: 24px;color: white;margin-left: -66%">
+       <p style="margin-top: -11%;margin-left: 0%;color: black">  Home </p> </a>
+       
+       
+       
+       
+       <a href="#about" style="color: white;text-align: center">
+       <img src="info.png" style="width: 24px;color: white;margin-left: -65%"> 
+       
+       <p style="margin-top: -11%;margin-left: 0%;color: black"> About  </p></a>
+       
+       
+       
+       <a href="#contact" style="color: white;text-align:center"><img src="settings.png" style="width: 24px;color: white;margin-left: -64%">  <p style="margin-top: -11%;margin-left: 1%;color: black">  Setting</p></a>
+       
+       
+       
+       
+       
+       
+       
+       <a href="https://m.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.webintoapp.com%2Fstore%2F49090" style="color: white;text-align: center">
+       <img src="share.png" style="width: 22px;color: white;margin-left: -63%">
+       <p style="margin-top: -11%;margin-left: 7%;color: black">  Share App</p></a>
+       
+       
+       <a href="mailto:shakibuzzaman501@gmail.com?sibject=Feedback&amp;body=message" style="color: white;text-align: center">
+       <img src="question-mark.png" style="width: 30px;color: white;margin-left: -63%">
+       <p style="margin-top: -11%;margin-left: 13%;color: black;text-shadow: 1px 1px 25px #fff"> Send feedback</p></a>
+       
+       
+       
+       </div>
+       </div>
+       
+       
+       
+       
+
+
+     <input type ="checkbox" id="openSidebarMenu">
+  <label id="div" for="openSidebarMenu" class="sidebarIconToggle">
+    <span class="div1" style="width: 14px;height: 3px;transition:.5s"></span>
+    <span class="div2" style="width: 18px;height: 2.5;transition:.6s"></span>
+    <span class="div3" style="height: 2.5;transition:.1s"></span>
+  </label>
+  
+
+  <div id="sidebarMenu">
+  
+  <ul class="menu">
+      <li><a href="index.html">🏠    <b style="text-shadow: 1px 1px 25px cyan"> Home</b>  </a></li>
+    
+
+
+<li><a href="mailto:shakibuzzaman501@gmail.com?sibject=Feedback&amp;body=message">📝  <b style="text-shadow: 1px 1px 25px cyan">Send feedback</b></a></li>
+   
+ <li><a href="#">♻️  <b style="text-shadow: 1px 1px 25px cyan">Connected with</b></a></li>
+ 
+  </ul>
+  
+  
+   <li>
+      
+      <div class="flip-box">
+  <div class="flip-box-inner">
+     <div class="flip-box-front">
+     
+        <img src="20220323_072205.jpg" class="iiill">
+        
+      
+     
+    </div> 
+    <div class="flip-box-back">
+      
+      
+        <a href="https://m.facebook.com/sb.live.Sport/" style="background-color: #bbb;color: #bbb;font-family: sans-serif;font-weight: 4000">
+          
+       <img src="facebook (2).png" style="width: 35%">
+          <p class="connection" style="text-shadow: 1px 1px 25px cyan">Facebook page</p></a>
+  
+  
+  <a href="https://m.youtube.com/channel/UCXSsK00oxwC0reYianJjXPA" style="background-color: #bbb;color: #bbb;font-family: sans-serif;font-weight: 4000">
+    <img src="youtube (1).png" style="width: 35%;margin-top: -4%">
+    
+    <p class="connection1" style="text-shadow: 1px 1px 25px cyan">Youtube channel</p></a>
+  
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+    </li>
+    <br>
+    <hr style="width: 80%;margin-left: 20px;color: #bbb">
+<br>
+
+
+  <a href="https://saicord.com/?do=register&lang=bn" style="background-color:#4D63DD;color: #4D63DD">
+    
+      <div class="divv" style="color: peachpuff;text-align: center;background-color: #4D63DD;width: 150px;margin-left: 42px;height: 34px;border: solid 1px #fff ;border-radius: 5px;transition: 1s">
+ <p class="divvv" style="margin-top: 5px;font-size: 120%;font-family: sans-serif;font-weight: 500;transition: 1s;text-shadow: 1px 1px 25px black"><b> Login</b></p>
+ </div>
+</a>
+  
+  <br><br><br><br>
+  
+  <div date-role="footer"><p class="pry" style="text-shadow: 1px 1px 20px cyan">&copy;  Privacy  Policy  2022</p></div>
+  
+  
+  </div>
+ 
+  
+  
+  
+ 
+  
+   <p class="headname" style="text-shadow: 1px 1px 2000000000px cyan"><b style="color: cyan;font-weight: 1000"><b style="font-size: 100%">s</b><b style="font-size: 74%;font-weight: 1000">B</b></b><b style="font-weight: 1000">mov<b style="font-size: 80%">i</b>e </b>
+   
+   <img src="20220422_085639.png" style="width: 60px;transform: translate(0px,-13px)">
+   
+   </p>
+
+  
+
+
+  
+</div>
+
+  
+
+  
+  
+
+  
+
+      
+        
+
+<nav class="mobile-bottom-nav">
+	
+					<a href="https://saicord.com/bn/" class="font1" style="height: 15px;width: 16px">
+					  <img src="20220422_110502.png" style="width: 21px;">
+					  
+					 
+					  
+					</a>
+					<br>
+				<b>	<p style="margin-top: 35px;font-size: 60%;margin-left: -18px;font-family: sans-serif;font-weight: 400;color: #676767">	Movie</p></b>
+						
+  
+
+		
+				<a href="bangla.html" class="font2" style="height: 15px;width: 16px">
+				  <img src="20220421_072007.png" style="width: 23px;">
+				  
+				  
+				</a>
+					
+	<br>
+				<b>	<p style="margin-top: 35px;font-size: 60%;margin-left: -20px;font-family: sans-serif;font-weight: 500;color: #676767">	Bangla</p></b>
+						
+			
+			
+				
+				<a href="index.html" class="font3" style="height: 15px;width: 16px">
+				  <img src="20220422_091141.png" style="width: 25px;">
+				  	</a>
+					
+						<br>
+				<b>	<p style="margin-top: 35px;font-size: 60%;margin-left: -17px;font-family: sans-serif;font-weight: 500;color: #fff">	Home</p></b>
+						
+					
+			
+		<a href="india.html" class="font4" style="height: 15px;width: 20px">
+		  <img src="20220421_072109.png" style="width: 23px;">
+		  
+		  
+		  
+		  
+		</a>
+			 
+		<br>
+				<b>	<p style="margin-top: 35px;font-size: 60%;margin-left: -19px;font-family: sans-serif;font-weight: 500;color: #676767">	Hindi</p></b>
+						
+	
+	
+	
+		<a href="tv.html" class="font4" style="height: 15px;width: 16px">
+		  
+		  <img src="20220421_072703.png" style="width: 25px;">
+		  
+		  
+		  
+		</a>
+			 
+		<br>
+				<b>	<p style="margin-top: 34px;font-size: 60%;margin-left: -18px;font-family: sans-serif;font-weight: 500;color: #676767">Live TV</p></b>
+						
+	
+
+	
+
+	
+
+</nav>
+<br><br><br><br>
+
+
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%;text-shadow: 1px 1px 200px cyan">Watching Now</div>
+
+
+<br>
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+            <div class="swiper-slide">
+       <a href="https://saicord.com/bn/movies/838-pushpa-the-rise-part-1.html"><img src="pushpa.jpg">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://saicord.com/bn/movies/825-k-g-f-chapter-1.html"><img src="kgf.jpg">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://saicord.com/bn/movies/1086-maari-2.html"><img src="mari.jpg">
+       </a>
+       </div>
+       
+       
+       <div class="swiper-slide">
+       <a href="https://saicord.com/bn/movies/4-ala-vaikunthapurramuloo.html"><img src="alavaikantum.jpg">
+       </a>
+       </div>
+       
+       
+            <div class="swiper-slide">
+       <a href="https://saicord.com/bn/movies/138-bigil.html"><img src="bigil.jpg">
+       </a>
+       </div>
+       
+       
+
+       
+                <div class="swiper-slide">
+       <a href="https://saicord.com/bn/movies/841-akhanda.html"><img src="okhando.jpg">
+       </a>
+       </div>
+       
+       
+           
+   
+       
+        <div class="swiper-slide">
+       <a href="https://saicord.com/bn/movies/page/2/"><img src="showmore.jpg">
+       </a>
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+     </div>
+     
+     
+    
+     
+     
+   </div>
+   
+
+
+<br><br>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%;text-shadow: 1px 1px 200000px cyan">Marvel Series</div>
+
+
+<br>
+  
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+            <div class="swiper-slide">
+       <a href="https://youtu.be/qfyQUeR_uV8"><img src="20220422_104310.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://youtu.be/5pMGGQ0Q4kg"><img src="20220422_104330.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://youtu.be/Kz-3hDmnGDw"><img src="20220422_104354.png">
+       </a>
+       </div>
+       
+       
+       <div class="swiper-slide">
+       <a href="https://youtu.be/2Nyw9dp-4Fw"><img src="20220422_104415.png">
+       </a>
+       </div>
+       
+       
+            <div class="swiper-slide">
+       <a href="https://youtu.be/Ach2X6c8jYo"><img src="20220422_104443.png">
+       </a>
+       </div>
+       
+       
+      
+       
+       
+             <div class="swiper-slide">
+       <a href="https://youtube.com/playlist?list=PLPsfvtmB4bO43pTccZpeb4qoswmPhCQyr"><img src="showmore.jpg">
+       </a>
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+     </div>
+     
+     
+    
+     
+     
+   </div>
+   
+  
+  
+  
+  
+  <br><br>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%">Cartoons</div>
+
+
+<br>
+  
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+            <div class="swiper-slide">
+       <a href="https://saicord.com/bn/animation/888-tom-and-jerry-cowboy-up.html"><img src="tomandjerry.jpg">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://saicord.com/bn/animation/432-mortal-kombat-legends-battle-of-the-realms.html"><img src="mortal.jpg">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://saicord.com/bn/animation/554-extinct.html"><img src="extinct.jpg">
+       </a>
+       </div>
+       
+       
+       <div class="swiper-slide">
+       <a href="https://youtube.com/playlist?list=PLDowWaszrvJbva3R6UnP29KoVOTB4VL-p"><img src="golmal.jpg">
+       </a>
+       </div>
+       
+       
+
+       
+       
+          <div class="swiper-slide">
+       <a href="https://youtube.com/playlist?list=PL5O3zv2ZcASjyDBGb0nrXuDcXzGBi0QeI"><img src="20220422_110847.png">
+       </a>
+       </div>
+       
+      
+       
+
+           
+   
+       
+        <div class="swiper-slide">
+       <a href="https://saicord.com/bn/animation/"><img src="showmore.jpg">
+       </a>
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+     </div>
+     
+     
+    
+     
+     
+   </div>
+   
+  
+  
+  
+  
+  
+  <br><br>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%">TV+  Series</div>
+
+
+<br>
+  
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+            <div class="swiper-slide">
+       <a href="https://saicord.com/bn/tvplus/538-a-spark-story.html"><img src="20220305_103525.jpg">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://saicord.com/bn/tvplus/547-the-day-sports-stood-still.html"><img src="20220305_103552.jpg">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://saicord.com/bn/tvplus/403-strip-down-rise-up.html"><img src="20220305_103651.jpg">
+       </a>
+       </div>
+       
+       
+       <div class="swiper-slide">
+       <a href="https://saicord.com/bn/tvplus/601-my-name-is-pauli-murray.html"><img src="20220305_103714.jpg">
+       </a>
+       </div>
+       
+       
+            <div class="swiper-slide">
+       <a href="https://saicord.com/bn/tvplus/399-fake-famous.html"><img src="20220305_103759.jpg">
+       </a>
+       </div>
+       
+       
+          <div class="swiper-slide">
+       <a href="https://saicord.com/bn/tvplus/834-aksel.html"><img src="20220305_103819.jpg">
+       </a>
+       </div>
+       
+
+        <div class="swiper-slide">
+       <a href="https://saicord.com/bn/tvplus/"><img src="showmore.jpg">
+       </a>
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+     </div>
+     
+     
+    
+     
+     
+   </div>
+   
+    <br><br>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%">Comming Soon</div>
+
+
+<br>
+  
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+            <div class="swiper-slide">
+       <a href=""><img src="20220422_105027.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href=""><img src="20220422_105126.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href=""><img src="20220422_105223.png">
+       </a>
+       </div>
+       
+       
+       <div class="swiper-slide">
+       <a href=""><img src="20220422_105252.png">
+       </a>
+       </div>
+       
+       
+            <div class="swiper-slide">
+       <a href=""><img src="showmore.jpg">
+       </a>
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+     </div>
+     
+     
+    
+     
+     
+   </div>
+   
+   
+   
+   
+   
+   
+   
+   
+  <div style="height: 14vh"></div>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+  
+  
+  var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+  
+  
+  
+  
+  function changeLanguage(language) {
+  var element = document.getElementById("url");
+  element.value = language;
+  element.innerHTML = language;
+  }
+  
+  function showDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+  var openDropdown = dropdowns[i];
+  if (openDropdown.classList.contains('show')) {
+  openDropdown.classList.remove('show');
+  }
+  }
+  }
+  }
+  
+  
+
+
+
+function mySearchFunction() {
+  
+  // Declare variables
+  var input, filter, ul, li, item, i, txtValue;
+  // User Input
+  input = document.getElementById("myInput");
+  // Filter, makes search not case sensitive
+  filter = input.value.toUpperCase();
+  // Grabs the parent element by id
+  ul = document.getElementById("stateList");
+  // Individual item on list
+  li = ul.getElementsByTagName("li");
+
+  // Treats lists items like an array, where each item can be accessed through      it's index
+  for (i = 0; i < li.length; i++) {
+    item = li[i];
+   // Iterate over each list item to see if the value of the input, ignoring         case, matches the inner text or inner html of the item.
+    txtValue = item.textContent || item.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    // Displays list items that are a match, and nothing if no match
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
