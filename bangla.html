@@ -10,11 +10,14 @@
   
     <link rel="icon" type="image/png" href="20220312_095629.png"> 
     
-  <link rel="stylesheet" href="swiper-bundle.min.css">
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+       
     
-    
-    
-      <link rel="stylesheet" href="style.css">
+   
     
   <!-- HTML -->
  
@@ -540,8 +543,6 @@ display: block;
   background-color: cyan
   /* Remove this if you don't want the 3D effect */
 }
-
-/* This container is needed to position the front and back side */
 .flip-box-inner {
   position: relative;
   width: 100%;
@@ -675,10 +676,7 @@ display: block;
        
        </ul>
        <!-- menu -->
-       
-       
-       
-       <div id="myDropdown" class="dropdown-content" style="background-color: cyan;border-radius: 5px;margin-top: 45px">
+         <div id="myDropdown" class="dropdown-content" style="background-color: cyan;border-radius: 5px;margin-top: 45px">
 
        
        <a href="index.html" style="color: white;text-align: center">
@@ -804,7 +802,7 @@ display: block;
   
    <p class="headname" style="text-shadow: 1px 1px 2000000000px cyan"><b style="color: cyan;font-weight: 1000"><b style="font-size: 100%">s</b><b style="font-size: 74%;font-weight: 1000">B</b></b><b style="font-weight: 1000">mov<b style="font-size: 80%">i</b>e </b>
    
-   <img src="20220421_125736.png" style="width: 41px;transform: translate(0px,-13px)">
+   <img src="20220422_085639.png" style="width: 60px;transform: translate(0px,-13px)">
    
    </p>
 
@@ -822,9 +820,7 @@ display: block;
   
 
       
-      
-    
-  
+        
 
 <nav class="mobile-bottom-nav">
 	
@@ -835,31 +831,31 @@ display: block;
 					  
 					</a>
 					<br>
-				<b>	<p style="margin-top: 35px;font-size: 60%;margin-left: -18px;font-family: sans-serif;font-weight: 400;color: #676767">	Search</p></b>
+				<b>	<p style="margin-top: 35px;font-size: 60%;margin-left: -18px;font-family: sans-serif;font-weight: 400;color: #676767">	Movie</p></b>
 						
   
 
+<a href="bangla.html" class="font2" style="height: 15px;width: 16px">
+		<img src="20220421_185023.png" style="width: 23px;">
 		
-				<a href="bangla.html" class="font2" style="height: 15px;width: 16px">
-				  <img src="20220421_185023.png" style="width: 23px;">
-				  
-				  
-				</a>
-					
-	<br>
-				<b>	<p style="margin-top: 35px;font-size: 60%;margin-left: -20px;font-family: sans-serif;font-weight: 500;color: #fff">	Bangla</p></b>
-						
-			
+		
+		</a>
+		
+		<br>
+		<b>	<p style="margin-top: 35px;font-size: 60%;margin-left: -20px;font-family: sans-serif;font-weight: 500;color: #fff">	Bangla</p></b>
+		
+		
+				
 			
 				
-				<a href="index.html" class="font3" style="height: 15px;width: 16px">
-				  <img src="20220421_071814.png" style="width: 25px;">
-				  	</a>
-					
-						<br>
-				<b>	<p style="margin-top: 35px;font-size: 60%;margin-left: -17px;font-family: sans-serif;font-weight: 500;color: #676767">	Home</p></b>
-						
-					
+			<a href="index.html" class="font3" style="height: 15px;width: 16px">
+			<img src="20220421_071814.png" style="width: 25px;">
+			</a>
+			
+			<br>
+			<b>	<p style="margin-top: 35px;font-size: 60%;margin-left: -17px;font-family: sans-serif;font-weight: 500;color: #676767">	Home</p></b>
+			
+			
 			
 		<a href="india.html" class="font4" style="height: 15px;width: 20px">
 		  <img src="20220421_072109.png" style="width: 23px;">
@@ -896,8 +892,7 @@ display: block;
 <br><br><br><br>
 
 
-
-   <div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%;text-shadow: 1px 1px 200px cyan">Watching Now</div>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%;text-shadow: 1px 1px 200px cyan">Watching Now</div>
 
 
 <br>
@@ -1226,9 +1221,23 @@ display: block;
    
    
    
+   
   <div style="height: 14vh"></div>
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
+  
+  
+  var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+  
+  
+  
   
   function changeLanguage(language) {
   var element = document.getElementById("url");
@@ -1287,14 +1296,7 @@ function mySearchFunction() {
 
 
 
-var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 3,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+
 
 
 
