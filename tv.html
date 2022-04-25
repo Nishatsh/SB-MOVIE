@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SB MOVIE</title>
+  
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="20220312_095629.png"> 
+    
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+       
+    
+   
+    
+  <!-- HTML -->
+ 
+  <!-- Custom Styles -->
+  <style type="text/css">
+  *{
+  box-sizing:  border-box;
+  font-size: sans-serif;
+width: 100%;
+  }
+  html, body{
+  overflow-x:hidden;
+  height:100%;
+  
+  }
+  body{
+  font-family:arial, sans-serif;
+  background:white;
+  padding:0px;
+  margin:0px;
+  }
+  .header{
+  background :#1E1E1E;
+  width:100%;
+  height:45px;
+  position :fixed;
+  z-index:10;
+  }
+  
+  
+  
+  .headline{
+  width: 40px;
+  margin-left: 80px;
+  margin-top: 5px;
+  border-radius: 3px;
+  height: 25px;
+  }
+  
+ 
+
+ 
+  
+  
+
+
+ .headna{
+   width: 32%;
+   margin-left: 55%;
+   font-size: 19px;
+   border: none;
+   background-color: #19191919;
+   margin-top: 5px;
+   color: blue;
+   height: 25px;
+   
+   
+ }
+.headname{
+  color: white;
+  margin-top: -24px;
+  font-size: 250%;
+  margin-left: 20%;
+  font-family: sans-serif;
+  font-weight: 800;
+  display: block
+}
+
+input#openSidebarMenu{
+  width: 0px
+}
+.eye{
+  width: 10%;
+  height: 90%;
+  margin-left: 90%;
+  background-color: #FC0191;
+  border: none;
+  color: #fff;
+  margin-top: 3px;
+  border-radius: 10px
+}
+.iii{
+   width: 112.5%;
+   margin-left: -40px;
+   color: white;
+  margin-top: 20px;
+   
+ }
+ 
+ .baccolor{
+   background-color: white;
+   
+ }
+
+
+
+
+
+
+  
+
+
+
+.iiill{
+  width: 65%;
+  border-radius: 7%;
+  margin-top: 15%;
+  text-align: center
+}
+
+
+.accordion {
+  background-color: #aaa;
+  color: #fff;
+  padding: 0px;
+  width: 75%;
+  height: 40%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  border-radius: 10%;
+  margin-left: 8%;
+  box-shadow: inset 0px 0px 0px 1px #fff;
+  font-size: 16px;
+  
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #aaa;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 1%;
+  width: 65%;
+  margin-left: 13.5%;
+ height: 145%
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus7" sign (+) */
+  font-size: 75%;
+  color: #777;
+  float: right;
+  margin-left: 0px;
+  margin-top: 5%
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.ioio{
+  width: 16%;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: -10%;
+}
+
+
+.mobile-bottom-nav{
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1000;
+	
+	//give nav it's own compsite layer
+	will-change:transform;
+	transform: translateZ(0);
+	
+	display:flex;	
+	
+	height:50px;
+	
+	box-shadow: 0 -2px 5px -2px #333;
+	background-color:#1E1E1E;
+}
+.font1{
+  margin-left: 7%;
+  margin-top: 4px;
+  background-color: #1E1E1E;
+  color: #fff;
+  display: block;
+}
+	.font2{
+  margin-left: 4%;
+  margin-top: 4px;
+  background-color: #1E1E1E;
+  color: black
+}.font3{
+  margin-left: 4.2%;
+  margin-top: 3px;
+  background-color: #1E1E1E;
+  color: black;
+  
+}.font4{
+  margin-left: 4%;
+  margin-top: 4px;
+  background-color: #1E1E1E;
+  color: black
+}
+.font5{
+  text-align: right;
+  margin-left: 40%;
+  margin-top: 3.5px;
+  background-color: #1E1E1E;
+  color: black
+}
+.showLeft{
+                    background-color: #1E1E1E !important;
+                    border:0px solid #FC0191 !important;
+                    text-shadow: none !important;
+                    color:#fff !important;
+                    padding:0%;
+                    
+                }
+.icons li {
+                    background: none repeat scroll 0 0 #fff;
+                    height: 7px;
+                    width: 6px;
+                    line-height: 0px;
+                    list-style: none outside none;
+                    margin-right: 15px;
+                    margin-top: 10px;
+                    vertical-align: top;
+                    border-radius:50%;
+                  pointer-events: none;
+                  margin: 0 auto
+                }
+
+                .btn-left {
+                    left: 0.4em;
+                }
+
+                .btn-right {
+                    right: 0.4em;
+                }
+
+                .btn-left, .btn-right {
+                    position: absolute;
+                    top:0.24em;
+                    
+                }
+
+                .dropbtn {
+                    background-color: #1E1E1E;
+                    position: fixed;
+                    color: white;
+                    font-size: 0px;
+                    border: 0px;
+                    width: 35px;
+                    height: 15px;
+                    margin-top: 5px;
+                    margin: 17px
+                 
+                }
+
+                .dropbtn:hover, .dropbtn:focus {
+                    background-color: #FC0191;
+                }
+
+                .dropdown {
+                    position: absolute;
+                    display: inline-block;
+                    right: 0.4em;
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: relative;
+                    margin-top: 60%;
+                    background-color: #fff;
+                    min-width: 100px;
+                    overflow: auto;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 5;
+                    width: 70%;
+                    height: 70%;
+                    margin-left: 31%;
+                    margin-top: 16%
+                }
+
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                .dropdown a:hover {background-color: #f1f1f1;
+                 
+                }
+
+                .show {display:block;}
+
+
+.panel b{
+  margin-left: 5px;
+  margin-top: -25px;
+  background-color: white;
+  width: 80%;
+  color: black;
+  font-size: 13px
+}
+
+.dropdown-content{
+  box-shadow: 0px 0px 7px black;
+  width: 70%;
+  
+}
+
+.mobile-bottom-nav{
+  box-shadow:  0px 0px 4px black;
+  
+}
+
+
+
+
+
+html,
+     body {
+       position: relative;
+       height: 100%;
+          background-color:#101010;      }
+          body {
+       background: #101010;
+       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+       font-size: 14px;
+       color: #101010;
+       margin: 0;
+       padding: 0;
+       background-color: #101010;
+     }
+     
+     
+     .swiper {
+       width: 95%;
+       height: 15%;
+      
+     }.swiper-slide {
+       text-align: center;
+       font-size: 1px;
+       background: #101010;display: -webkit-box;
+       display: -ms-flexbox;
+       display: -webkit-flex;
+       display: flex;
+       -webkit-box-pack: center;
+       -ms-flex-pack: center;
+       -webkit-justify-content: center;
+       justify-content: center;
+       -webkit-box-align: center;
+       -ms-flex-align: center;
+       -webkit-align-items: center;
+       align-items: center;
+     }
+     
+     .swiper-slide img {
+       display: block;
+       width: 70%;
+       height: 100%;
+       object-fit: cover;
+       border-radius: 5px;
+       margin: 0 auto;
+       display: block;
+       box-shadow: 0 0 3px 1.5px cyan;
+       border-radius: 40%;
+     
+     }
+     
+       
+     
+     
+     
+     
+     .sidebarIconToggle{
+  background :none;
+  width:22px;
+  height:22px;
+  position :absolute;
+  z-index:200;
+  top:6px;
+  left:15px;
+  transform: translateX(10px)
+  }
+  #openSidebarMenu:checked ~ #sidebarMenu
+  
+  
+    .main{
+  height: 100%;
+  margin-top:60px;
+  padding:10px 50px;
+  }
+  
+  
+
+  #sidebarMenu{
+  height:95%;
+  position :fixed;
+  left:0;
+  top:-15px;
+  width:250px;
+  margin-top:60px;
+  background :black;
+  transform: translateX(-250px);
+  transition: transform 250ms ease-in-out;
+  }
+  
+  #openSidebarMenu:checked ~ #sidebarMenu
+  {transform: translateX(0px)}
+  
+  
+  .menu{
+  list-style: none;
+  padding:0;
+  margin:0;
+  width: 100%;
+  
+  }
+  .menu li{
+  color:white;
+  border-bottom: 1px solid rgba(255, 255, 255,0.10);
+  width: 80%;
+  height: 50%;
+  font-size: 95%;
+  }
+  .menu li a {
+  color:white;
+  display:block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding:20px;
+  width: 125%;
+  height: 50px;
+  font-family: sans-serif;
+  }
+  .sidebarIconToggle{
+  width :45px;
+  height: 25px;
+  position: absolute;
+  z-index: 20000;
+  top: 2px;
+  left: 8px;
+  }
+  .sidebarIconToggle span{
+  display: block;
+  background-color: white;
+  width:25px;
+  height: 3px;
+  margin: 5px;
+  background: white;
+  margin-left: 5px
+  }
+  .headline{
+  width: 40px;
+  margin-left: 80px;
+  margin-top: 5px;
+  border-radius: 3px;
+  height: 25px;
+  }
+  
+ 
+label.sidebarIconToggle{
+  margin-top: 10px;
+  margin-left: -7px;
+  
+}
+ span{
+   border-radius: 5px;
+   width: 5px
+ }
+  
+  .pry{
+  color: #959595;
+  font-size: 80%;
+  margin-left: 24%;
+  font-family: sans-serif;
+  margin-top: -15%;
+  transition: 10ms
+  }
+  
+  
+  
+  
+  .baccolor{
+   background-color: white;
+   
+ }
+
+.connection {
+  color: black;
+  width: 65%;
+margin-top: 0px;
+font-size: 70%;
+margin-left: 18%;
+display: block;
+}
+.connection1{
+  color: black;
+  width: 65%;
+  font-size: 68%;
+  margin-left: 18%;
+  margin-top: -1px;
+  display: block;
+}
+
+
+
+
+  .flip-box {
+  background-color: transparent;
+  width: 65%;
+  height: 160px;
+  border: 2px solid #f1f1f1;
+  perspective: 1000px;
+  margin-left: 35px;
+  background-color: black;
+  margin-top: 0%;
+  border-radius: 20%;
+  background-color: cyan
+  /* Remove this if you don't want the 3D effect */
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 20%
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #bbb;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 20%
+}
+
+
+
+
+.iiill{
+  width: 65%;
+  border-radius: 7%;
+  margin-top: 15%;
+  text-align: center
+}
+
+
+.accordion {
+  background-color: #aaa;
+  color: #fff;
+  padding: 0px;
+  width: 75%;
+  height: 40%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  border-radius: 10%;
+  margin-left: 8%;
+  box-shadow: inset 0px 0px 0px 1px #fff;
+  font-size: 16px;
+  
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #aaa;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 1%;
+  width: 65%;
+  margin-left: 13.5%;
+ height: 145%
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus7" sign (+) */
+  font-size: 75%;
+  color: #777;
+  float: right;
+  margin-left: 0px;
+  margin-top: 5%
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+
+.div1:hover {
+  transform: rotate(-308deg) translate(10px) scaleX(2.2) ;
+ background-color: #fff;
+ margin-left: 13px;
+ 
+}
+</style>
+</head>
+
+<body>
+
+   <div class="header">
+    
+      
+ 
+       <div class="dropdown">
+       <!-- three dots -->
+       <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+       <li style="width: 4px;
+       height: 4px;margin-top: 0px"></li>
+       <li style="width: 4px;
+       height: 4px;margin-top: 3px"></li>
+       <li style="width: 4px;
+       height: 4px;margin-top: 3px"></li>
+       
+       
+       </ul>
+       <!-- menu -->
+         <div id="myDropdown" class="dropdown-content" style="background-color: cyan;border-radius: 5px;margin-top: 45px">
+
+       
+       <a href="index.html" style="color: white;text-align: center">
+       
+       <img src="home.png" style="width: 24px;color: white;margin-left: -66%">
+       <p style="margin-top: -11%;margin-left: 0%;color: black">  Home </p> </a>
+       
+       
+       
+       
+       <a href="#about" style="color: white;text-align: center">
+       <img src="info.png" style="width: 24px;color: white;margin-left: -65%"> 
+       
+       <p style="margin-top: -11%;margin-left: 0%;color: black"> About  </p></a>
+       
+       
+       
+       <a href="#contact" style="color: white;text-align:center"><img src="settings.png" style="width: 24px;color: white;margin-left: -64%">  <p style="margin-top: -11%;margin-left: 1%;color: black">  Setting</p></a>
+       
+       
+       
+       
+       
+       
+       
+       <a href="https://m.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.webintoapp.com%2Fstore%2F49090" style="color: white;text-align: center">
+       <img src="share.png" style="width: 22px;color: white;margin-left: -63%">
+       <p style="margin-top: -11%;margin-left: 7%;color: black">  Share App</p></a>
+       
+       
+       <a href="mailto:shakibuzzaman501@gmail.com?sibject=Feedback&amp;body=message" style="color: white;text-align: center">
+       <img src="question-mark.png" style="width: 30px;color: white;margin-left: -63%">
+       <p style="margin-top: -11%;margin-left: 13%;color: black;text-shadow: 1px 1px 25px #fff"> Send feedback</p></a>
+       
+       
+       
+       </div>
+       </div>
+       
+       
+       
+       
+
+
+     <input type ="checkbox" id="openSidebarMenu">
+  <label id="div" for="openSidebarMenu" class="sidebarIconToggle">
+    <span class="div1" style="width: 10px;height: 3px;transition: .6s;"></span>
+    <span class="div2" style="width: 15px;height: 2.5;margin-left: "></span>
+    <span class="div3" style="height: 2.5;width: 27px"></span>
+  </label>
+  
+
+  <div id="sidebarMenu">
+  
+  <ul class="menu">
+      <li><a href="index.html">🏠    <b style="text-shadow: 1px 1px 25px cyan"> Home</b>  </a></li>
+    
+
+
+<li><a href="mailto:shakibuzzaman501@gmail.com?sibject=Feedback&amp;body=message">📝  <b style="text-shadow: 1px 1px 25px cyan">Send feedback</b></a></li>
+   
+ <li><a href="#">♻️  <b style="text-shadow: 1px 1px 25px cyan">Connected with</b></a></li>
+ 
+  </ul>
+  
+  
+   <li>
+      
+      <div class="flip-box">
+  <div class="flip-box-inner">
+     <div class="flip-box-front">
+     
+        <img src="20220323_072205.jpg" class="iiill">
+        
+      
+     
+    </div> 
+    <div class="flip-box-back">
+      
+      
+        <a href="https://m.facebook.com/sb.live.Sport/" style="background-color: #bbb;color: #bbb;font-family: sans-serif;font-weight: 4000">
+          
+       <img src="facebook (2).png" style="width: 35%">
+          <p class="connection" style="text-shadow: 1px 1px 25px cyan">Facebook page</p></a>
+  
+  
+  <a href="https://m.youtube.com/channel/UCXSsK00oxwC0reYianJjXPA" style="background-color: #bbb;color: #bbb;font-family: sans-serif;font-weight: 4000">
+    <img src="youtube (1).png" style="width: 35%;margin-top: -4%">
+    
+    <p class="connection1" style="text-shadow: 1px 1px 25px cyan">Youtube channel</p></a>
+  
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+    </li>
+ 
+  <br><br><br><br>
+  
+  <div date-role="footer"><p class="pry" style="text-shadow: 1px 1px 20px cyan">&copy;  Privacy  Policy  2022</p></div>
+  
+  
+  </div>
+ 
+  
+  
+  
+ 
+  
+   <p class="headname" style="text-shadow: 1px 1px 2000000000px cyan"><b style="color: cyan;font-weight: 1000"><b style="font-size: 100%">s</b><b style="font-size: 74%;font-weight: 1000">B</b></b><b style="font-weight: 1000"><b style="font-size: 75%">T</b>v </b>
+   
+   <img src="20220425_175955.png" style="width: 60px;transform: translate(0px,-13px)">
+   
+   </p>
+
+  
+
+
+  
+</div>
+
+  
+
+  <nav class="mobile-bottom-nav" style="margin-left: 2px">
+	
+					<a href="https://toffeelive.com/search/result?searchKey=" style="width: 20%;text-align: center;justify-align: center;background-color: #1E1E1E;color: #1E1E1E">
+					
+					<img src="20220422_110502.png" style="width: 23px;margin-top: 5px;margin-left: 0%">
+					<br>
+					<b style="text-align: center;color: #676767;font-size: 10px"> Search</b>
+					</a>
+					
+					
+					
+					
+					<a href="bangla.html" style="width: 20%;text-align: center;justify-align: center;background-color: #1E1E1E;color: #1E1E1E">
+					
+					<img src="20220421_072007.png" style="width: 23px;margin-top: 5px;margin-left: 0%">
+					<br>
+					<b style="text-align: center;color: #676767;font-size: 10px"> Bangla</b>
+					</a>
+					
+					
+					<a href="index.html" style="width: 20%;text-align: center;justify-align: center;background-color: #1E1E1E;color: #1E1E1E">
+					
+					<img src="20220421_071814.png" style="width: 23px;margin-top: 5px;margin-left: 0%">
+					<br>
+					<b style="text-align: center;color: #676767;font-size: 10px"> Home</b>
+					</a>
+					
+					
+					<a href="https://saicord.com/hi/" style="width: 20%;text-align: center;justify-align: center;background-color: #1E1E1E;color: #1E1E1E">
+					
+					<img src="20220421_072109.png" style="width: 24px;margin-top: 5px;margin-left: 0%">
+					<br>
+					<b style="text-align: center;color: #676767;font-size: 10px"> Hindi</b>
+					</a>
+					
+					
+					<a href="tv.html" style="width: 20%;text-align: center;justify-align: center;background-color: #1E1E1E;color: #1E1E1E">
+					
+					<img src="20220425_180430.png" style="width: 24px;margin-top: 5px;margin-left: 0%">
+					<br>
+					<b style="text-align: center;color: #fff;font-size: 10px"> Live TV</b>
+					</a>
+					
+					
+					
+					
+	
+
+	
+
+</nav>
+<br><br><br><br>
+
+
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%;text-shadow: 1px 1px 200px cyan">Watching TV</div>
+<br>
+
+  
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/ad2d89100e475427fae2882f2d5dcc36"><img src="20220425_143950.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/099586831cef7658bdcf9b1b2247947d"><img src="20220425_143711.png">
+       </a>
+       </div>
+       
+       
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/591a488c7a7438e413fc196a049d3f07"><img src="20220425_143645.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/e9e003c325eec6946ed1d23c6ac90a21"><img src="20220425_143626.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/ab8f5789d340620b89a3ace8eb2fee47"><img src="20220425_143603.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/07983a0e0b03d2c989d05f5d907ee2b3"><img src="20220425_143533.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/5ba5aeb8d1e3b2366a6d5b91acfcb5f7"><img src="20220425_143419.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/2b786dfb89a71267ab89fda2675631b4"><img src="20220425_143331.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/63fa34a825c2e59da4819943bf09de69"><img src="20220425_143310.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/0a4869b78ba89886402d05bcb42721c7"><img src="/20220425_143223.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/fadeb64cdb2a22fcf19f0300c9d2e30b"><img src="20220425_143157.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/e8990b30cb5e46fd28e4c52c395f3263"><img src="20220425_143133.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/8bb5c4c835f12337beb4158fd658a3d1"><img src="20220425_143106.png">
+       </a>
+       </div>
+       
+           
+       
+       
+       
+     </div>
+     
+     
+    
+   </div>
+     
+   
+   <br><br>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%">Sports</div>
+
+
+<br>
+  
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/260f2c01cc46d0a08c6c7cc674f31351"><img src="20220425_144018.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/2c650e4449bd724407c4fc4d14f96074"><img src="20220425_143904.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/2c650e4449bd724407c4fc4d14f96074"><img src="20220425_143834.png">
+       </a>
+       </div>
+       
+       
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/c4007b19e06da78a3239a44be37bcf76"><img src="20220425_134328.png">
+       </a>
+       </div>
+       
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/2907850d827f820b2f39dc29ed3dfa96"><img src="20220425_134304.png">
+       </a>
+       </div>
+       
+       
+       
+       
+        <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/9e2b55c048f7e1c20e3eb9c135d0af0b"><img src="20220425_134240.png">
+       </a>
+       </div>
+       
+       
+       
+     </div>
+   </div>
+
+   
+   <br><br>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%">News</div>
+
+
+<br>
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+       
+       
+       
+      
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/fc59fa460e9ee01e9896119e1840d511"><img src="20220425_142542.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/0bdfe2e55090d6be70793778d0d8e147"><img src="20220425_142512.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/ef9443bd581764b1a77b7de4cd0507a3"><img src="20220425_142438.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/4947c065a0a2d58f6e14bdae7242a562"><img src="20220425_142241.png">
+       </a>
+       </div>
+   
+           
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/0198902aad24dbd74a829847094f6311"><img src="20220425_133130.png">
+       </a>
+       </div>
+   
+            
+   
+   
+   
+
+  </div>
+  </div>
+
+
+
+
+
+ <br><br>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%">Music</div>
+
+
+<br>
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/0bd0925e08eb597bd7e804d768fc207a"><img src="20220425_143735.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/4effc0b88d9c1125754425708f0f2452"><img src="20220425_141950.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/66f276916d5a97cbb3b0008213bda1c3"><img src="20220425_132922.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/20ae05a0a5206b0cb7f6bd0aba50227f"><img src="20220425_133409.png">
+       </a>
+       </div>
+   
+            
+
+  </div>
+  </div>
+
+
+ <br><br>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%">Zee </div>
+
+
+<br>
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/a994b649ba44f2913f5d7ec45b5a55fc"><img src="20220425_133810.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/3c1ccc8ae801108389b8a86dd31a847f"><img src="20220425_133743.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/bbb26ea55a5b782dd33c2990388b3bee"><img src="20220425_133713.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/72a08c5d474efc2e7948c42da03cf563"><img src="20220425_133640.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/9905065e2878fb8c4eee1a91183432a8"><img src="20220425_133614.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/d581d1391302bbd278e49bb95d66e556"><img src="20220425_133318.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/2ea9504aba6d914cbc0468c06a9da2d7"><img src="20220425_133242.png">
+       </a>
+       </div>
+   
+          
+
+  </div>
+  </div>
+
+
+
+
+ <br><br>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%">Cartoon tv</div>
+
+
+<br>
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/e841f6eda20016f2373081e96b8c776c"><img src="20220425_142747.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/4a6ddb6cf5c34fbc975e6a282f63ff93"><img src="20220425_142631.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/1165948c063a887eaf4dcb354b300cc0"><img src="20220425_142604.png">
+       </a>
+       </div>
+
+  </div>
+  </div>
+
+
+
+
+ <br><br>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%">Colors</div>
+
+
+<br>
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/5d50889672f6f860d14f502de3de1957"><img src="20220425_143043.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/2f1988e8715bb8695ba347d1c9747739"><img src="20220425_143023.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/e0e85c9f79e9f64c65b04ff180d55708"><img src="20220425_143002.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/cb074ff7d11bce13d426f1442ae82cd0"><img src="20220425_142910.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/18d591d8110952dd64ce20ba9b7df44f"><img src="20220425_142844.png">
+       </a>
+       </div>
+   
+          
+  </div>
+  </div>
+
+
+
+
+
+
+ <br><br>
+<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%">Sony</div>
+
+
+<br>
+   <div class="swiper mySwiper">
+     <div class="swiper-wrapper">
+       
+       
+       
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/4947c065a0a2d58f6e14bdae7242a562"><img src="20220425_142241.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/707e46017f6e9b4dcda37a761efbda57"><img src="20220425_142216.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/36fa8ce3ab4e89180247473a80feb232"><img src="20220425_134217.png">
+       </a>
+       </div>
+   
+   
+               <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/a6b5f149e6048f39dc0d451496130cc5"><img src="20220425_133346.png">
+       </a>
+       </div>
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/b872ee85433cf7d606ec2fe3507ef0fe"><img src="20220425_134124.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/f27d3a53af8884b6b8cf2ecc4c747d84"><img src="20220425_134056.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/3e8f38923fa5624620f9f54a2f03183f"><img src="20220425_134034.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/9c0107550f54f817b55d2cd47d95fe50"><img src="20220425_134007.png">
+       </a>
+       </div>
+   
+           
+   
+    <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/8442b87f2d35421a58ead01532b7069b"><img src="20220425_133910.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/e4d0a10b5727e637659166049973ce56"><img src="20220425_133840.png">
+       </a>
+       </div>
+   
+           
+
+   
+           
+
+  </div>
+  </div>
+
+
+
+
+   
+   
+   
+   <div style="height: 14vh"></div>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+  
+  
+  
+  
+  var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 1,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+  
+  
+  
+  
+  function changeLanguage(language) {
+  var element = document.getElementById("url");
+  element.value = language;
+  element.innerHTML = language;
+  }
+  
+  function showDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+  var openDropdown = dropdowns[i];
+  if (openDropdown.classList.contains('show')) {
+  openDropdown.classList.remove('show');
+  }
+  }
+  }
+  }
+  
+  
+
+
+
+function mySearchFunction() {
+  
+  // Declare variables
+  var input, filter, ul, li, item, i, txtValue;
+  // User Input
+  input = document.getElementById("myInput");
+  // Filter, makes search not case sensitive
+  filter = input.value.toUpperCase();
+  // Grabs the parent element by id
+  ul = document.getElementById("stateList");
+  // Individual item on list
+  li = ul.getElementsByTagName("li");
+
+  // Treats lists items like an array, where each item can be accessed through      it's index
+  for (i = 0; i < li.length; i++) {
+    item = li[i];
+   // Iterate over each list item to see if the value of the input, ignoring         case, matches the inner text or inner html of the item.
+    txtValue = item.textContent || item.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    // Displays list items that are a match, and nothing if no match
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
