@@ -15,8 +15,12 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
-       
-    
+        <link
+      rel="stylesheet"
+      href="style.css"
+    />
+
+  <link rel="stylesheet" href="splide.min.css">
    
     
   <!-- HTML -->
@@ -32,6 +36,11 @@ width: 100%;
   overflow-x:hidden;
   height:100%;
   
+  }
+  
+  button{
+    height: 1px;
+    width: 1px
   }
   body{
   font-family:arial, sans-serif;
@@ -340,11 +349,6 @@ input#openSidebarMenu{
   box-shadow:  0px 0px 4px black;
   
 }
-
-
-
-
-
 html,
      body {
        position: relative;
@@ -363,7 +367,7 @@ html,
      
      .swiper {
        width: 95%;
-       height: 25%;
+       height: 15%;
       
      }.swiper-slide {
        text-align: center;
@@ -380,6 +384,8 @@ html,
        -ms-flex-align: center;
        -webkit-align-items: center;
        align-items: center;
+       
+       
      }.swiper-slide img {
        display: block;
        width: 90%;
@@ -387,13 +393,14 @@ html,
        object-fit: cover;
        border-radius: 5px;
        margin: 0 auto;
-       display: block
+       display: block;
+       box-shadow: 0 0 1px 2px cyan;
+       border-radius: 40%
      }
      
+ 
      
-     
-     
-     
+ 
      
      
      .sidebarIconToggle{
@@ -653,6 +660,108 @@ display: block;
 
 
 
+
+
+
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 10px
+}
+
+.active, .dot:hover {
+  background-color: 717171;
+}
+
+/* Fading animation */
+
+ .splide__track{
+     width: 85%;
+     height: 22vh;
+     margin: 0 auto
+   }
+  
+ .uuu{
+    width: 95%;
+    height: 100%;
+    border-radius: 5px;
+    margin: 0 auto
+  }
+  
+li{
+  width: 0%;
+ background-color: auto
+}
+svg{
+  width: 1%
+}
  </style>
 </head>
 
@@ -683,8 +792,7 @@ display: block;
        <p style="margin-top: -11%;margin-left: 0%;color: black">  Home </p> </a>
        
        
-       
-       
+              
        <a href="#about" style="color: white;text-align: center">
        <img src="info.png" style="width: 24px;color: white;margin-left: -65%"> 
        
@@ -810,7 +918,7 @@ display: block;
   
    <p class="headname" style="text-shadow: 1px 1px 2000000000px cyan"><b style="color: cyan;font-weight: 1000"><b style="font-size: 100%">s</b><b style="font-size: 74%;font-weight: 1000">B</b></b><b style="font-weight: 1000">mov<b style="font-size: 80%">i</b>e </b>
    
-   <img src="20220422_085639.png" style="width: 60px;transform: translate(0px,-13px)">
+   <img src="20220426_192907.png" style="width: 60px;transform: translate(0px,-13px)">
    
    </p>
 
@@ -879,461 +987,360 @@ display: block;
 					
 
 	
-
 </nav>
-<br><br><br><br>
+<br><br><br>
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%;text-shadow: 1px 1px 200px cyan">Watching Now</div>
+  <!-- Full-width images with number and caption text -->
+  
+   <div class="mySlides fade">
+   
+    <a href="index.html"><img src="20220426_080448.jpg" style="width:90%;margin-left: 5%;border-radius: 3px;border: 1px solid #fff">
+    </a>
+  </div>
+  
+  
+  
+  <div class="mySlides fade">
+    <a href="tv.html">
+    <img src="20220426_192211.jpg" style="width:90%;margin-left: 5%;border-radius: 3px;border: 1px solid #fff">
+    </a>
+   
+  </div>
+
+ 
+  <div class="mySlides fade">
+    <a href="tv.html">
+    <img src="20220427_203653.png" style="width:90%;margin-left: 5%;border-radius: 3px;border: 1px solid #fff">
+    </a>
+   
+  </div> 
+
+
+
+
+
+
+
+ <div class="mySlides fade">
+    <a href="tv.html">
+    <img src="20220427_205700.jpg" style="width:90%;margin-left: 5%;border-radius: 3px;border: 1px solid #fff">
+    </a>
+   
+  </div>
+  
+  
+  
+  
+
+  <div class="mySlides fade">
+    <a href="bangla.html">
+    <img src="20220428_092605.jpg" style="width:90%;margin-left: 5%;border-radius: 3px;border: 1px solid #fff">
+    </a>
+   
+  </div>
+  
+    <div class="mySlides fade">
+    <a href="tv.html">
+    <img src="20220427_205127.png" style="width:90%;margin-left: 5%;border-radius: 3px;border: 1px solid #fff">
+    </a>
+   
+  </div>
+  <!-- Next and previous buttons -->
+
+  
+  
+</div>
 <br>
 
-  
-   <div class="swiper mySwiper">
-     <div class="swiper-wrapper">
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/838-pushpa-the-rise-part-1.html"><img src="pushpa.jpg">
-       </a>
-       </div>
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/825-k-g-f-chapter-1.html"><img src="kgf.jpg">
-       </a>
-       </div>
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/1086-maari-2.html"><img src="mari.jpg">
-       </a>
-       </div>
-       
-       
-       <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/4-ala-vaikunthapurramuloo.html"><img src="alavaikantum.jpg">
-       </a>
-       </div>
-       
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/138-bigil.html"><img src="bigil.jpg">
-       </a>
-       </div>
-       
-       
-
-       
-                <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/841-akhanda.html"><img src="okhando.jpg">
-       </a>
-       </div>
-       
-       
-           
-   
-       
-        <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/page/2/"><img src="showmore.jpg">
-       </a>
-       </div>
-       
-       
-       
-       
-       
-       
-       
-       
-       
-     </div>
-     
-     
-    
-     
-     
-   </div>
-   
+<!-- The dots/circles -->
+<div style="text-align:center;margin-top: -20px">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 
 
 
 
-
-<br><br><br>
-
-
-<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 0%;text-shadow: 1px 1px 200px cyan;position: absolute">Movie</div>
-<div style="position: absolute;left: 23%;font-family: sans-serif;"><a href="https://saicord.com/bn/latest.html" style="background-color: #101010;color: #101010;"><b style="color: #999999;font-weight:450;font-size: 13px">More</b></a></div>
 <br><br>
 
-  <div style="display: flex;">
-  <a href="https://saicord.com/bn/latest.html" style="display: block;margin-left: 7%;width: 25%;border-radius: 10px;height: 5vh">
-    <img src="IMG_20220425_094645.jpg" style="width: 100%;border-radius: 40px;border: solid 1px #1E1E1E;height: 40px">
-  </a>
-  
-  
-  
-   <a href="#" style="display: block;margin-left: 5%;width: 26%;border-radius: 10px">
-    <img src="IMG_20220425_094724.jpg" style="width: 100%;border-radius: 40px;height: 40px;border: solid 1px #1E1E1E">
-  </a>
-  
-  
-  
-   <a href="https://saicord.com/bn/top.html" style="display: block;margin-left: 5%;width: 26%;border-radius: 10px">
-    <img src="IMG_20220425_100950.jpg" style="border-radius: 40px;width:100%;height:40px;border: solid 1px #1E1E1E">
-  </a>
-</div>
-  
-   <div class="swiper mySwiper">
-     <div class="swiper-wrapper">
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/25-maharshi.html"><img src="20220425_104825.png">
-       </a>
-       </div>
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/810-most-eligible-bachelor.html"><img src="20220425_104859.png">
-       </a>
-       </div>
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/1148-mr-local.html"><img src="20220425_104926.png">
-       </a>
-       </div>
-       
-       
-       <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/895-90-ml.html"><img src="20220425_104953.png">
-       </a>
-       </div>
-       
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/189-sarileru-neekevvaru.html"><img src="20220425_105019.png">
-       </a>
-       </div>
-       
-       
-
-       
-                <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/69-mersal.html"><img src="20220425_105054.png">
-       </a>
-       </div>
-       
-       
-           
-   
-       
-        <div class="swiper-slide">
-       <a href="https://saicord.com/bn/movies/"><img src="showmore.jpg">
-       </a>
-       </div>
-       
-       
-       
-       
-       
-       
-       
-       
-       
-     </div>
-     
-     
-    
-     
-     
-   </div>
-   
-
-
-
-
-<br><br><br>
-<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;text-shadow: 1px 1px 200000px cyan;position: absolute">Marvel Series</div>
-
-<div style="position: absolute;left: 42%;font-family: sans-serif;"><a href="https://m.youtube.com/c/TheBongWood" style="background-color: #101010;color: #101010;"><b style="color: #999999;font-weight:450;font-size: 13px">More</b></a></div>
-<br><br>
-<div style="display: flex;">
-  <a href="https://m.youtube.com/c/TheBongWood" style="display: block;margin-left: 7%;width: 25%;border-radius: 10px;height: 5vh">
-    <img src="IMG_20220425_094645.jpg" style="width: 100%;border-radius: 40px;border: solid 1px #1E1E1E;height: 40px">
-  </a>
-  
-  
-  
-   <a href="#" style="display: block;margin-left: 5%;width: 26%;border-radius: 10px">
-    <img src="IMG_20220425_094724.jpg" style="width: 100%;border-radius: 40px;height: 40px;border: solid 1px #1E1E1E">
-  </a>
-  
-  
-  
-   <a href="https://youtu.be/79GYSdP3o3g" style="display: block;margin-left: 5%;width: 26%;border-radius: 10px">
-    <img src="IMG_20220425_100950.jpg" style="border-radius: 40px;width:100%;height:40px;border: solid 1px #1E1E1E">
-  </a>
-</div>
-  
-  <br>
-   <div class="swiper mySwiper">
-     <div class="swiper-wrapper">
-       
-            <div class="swiper-slide">
-       <a href="https://youtu.be/qfyQUeR_uV8"><img src="20220422_104310.png">
-       </a>
-       </div>
-       
-            <div class="swiper-slide">
-       <a href="https://youtu.be/5pMGGQ0Q4kg"><img src="20220422_104330.png">
-       </a>
-       </div>
-       
-            <div class="swiper-slide">
-       <a href="https://youtu.be/Kz-3hDmnGDw"><img src="20220422_104354.png">
-       </a>
-       </div>
-       
-       
-       <div class="swiper-slide">
-       <a href="https://youtu.be/2Nyw9dp-4Fw"><img src="20220422_104415.png">
-       </a>
-       </div>
-       
-       
-            <div class="swiper-slide">
-       <a href="https://youtu.be/Ach2X6c8jYo"><img src="20220422_104443.png">
-       </a>
-       </div>
-       
-       <div class="swiper-slide">
-       <a href="https://youtube.com/playlist?list=PLPsfvtmB4bO43pTccZpeb4qoswmPhCQyr"><img src="showmore.jpg">
-       </a>
-       </div>
-       
-       
-       
-       
-       
-       
-       
-       
-       
-     </div>
-     
-     
-    
-     
-     
-   </div>
-   
-  
-  
-  
-  
-  <br><br><br>
-<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;position: absolute">Cartoons</div>
-
-<div style="position: absolute;left: 30%;font-family: sans-serif;"><a href="https://saicord.com/bn/animation/" style="background-color: #101010;color: #101010;"><b style="color: #999999;font-weight:450;font-size: 13px">More</b></a></div>
-<br><br>
-<div style="display: flex;">
-  <a href="https://saicord.com/bn/animation/" style="display: block;margin-left: 7%;width: 25%;border-radius: 10px;height: 5vh">
-    <img src="IMG_20220425_094645.jpg" style="width: 100%;border-radius: 40px;border: solid 1px #1E1E1E;height: 40px">
-  </a>
-  
-  
-  
-   <a href="" style="display: block;margin-left: 5%;width: 26%;border-radius: 10px">
-    <img src="IMG_20220425_094724.jpg" style="width: 100%;border-radius: 40px;height: 40px;border: solid 1px #1E1E1E">
-  </a>
-  
-  
-  
-   <a href="https://saicord.com/bn/animation/" style="display: block;margin-left: 5%;width: 26%;border-radius: 10px">
-    <img src="IMG_20220425_100950.jpg" style="border-radius: 40px;width:100%;height:40px;border: solid 1px #1E1E1E">
-  </a>
-</div>
-  
-   <div class="swiper mySwiper" style="margin-top: -1%">
-     <div class="swiper-wrapper">
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/animation/888-tom-and-jerry-cowboy-up.html"><img src="tomandjerry.jpg">
-       </a>
-       </div>
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/animation/432-mortal-kombat-legends-battle-of-the-realms.html"><img src="mortal.jpg">
-       </a>
-       </div>
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/animation/554-extinct.html"><img src="extinct.jpg">
-       </a>
-       </div>
-       
-       
-       <div class="swiper-slide">
-       <a href="https://youtube.com/playlist?list=PLDowWaszrvJbva3R6UnP29KoVOTB4VL-p"><img src="golmal.jpg">
-       </a>
-       </div>
-       
-       
-
-       
-       
-          <div class="swiper-slide">
-       <a href="https://youtube.com/playlist?list=PL5O3zv2ZcASjyDBGb0nrXuDcXzGBi0QeI"><img src="20220422_110847.png">
-       </a>
-       </div>
-       
-      
-       
-
-           
-   
-       
-        <div class="swiper-slide">
-       <a href="https://saicord.com/bn/animation/"><img src="showmore.jpg">
-       </a>
-       </div>
-       
-       
-       
-       
-       
-       
-       
-       
-       
-     </div>
-     
-     
-    
-     
-     
-   </div>
-   
-  
-  
-  
-  
-  
-  <br><br><br>
-<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;position: absolute">TV+  Series   </div>
-<div style="position: absolute;left: 35%;font-family: sans-serif;"><a href="https://saicord.com/bn/tvplus/" style="background-color: #101010;color: #101010;"><b style="color: #999999;font-weight:450;font-size: 13px">More</b></a></div>
-  <br><br>
-<div style="display: flex;">
-  <a href="https://saicord.com/bn/tvplus/" style="display: block;margin-left: 7%;width: 25%;border-radius: 10px;height: 5vh">
-    <img src="IMG_20220425_094645.jpg" style="width: 100%;border-radius: 40px;border: solid 1px #1E1E1E;height: 40px">
-  </a>
-  
-  
-  
-   <a href="#" style="display: block;margin-left: 5%;width: 26%;border-radius: 10px">
-    <img src="IMG_20220425_094724.jpg" style="width: 100%;border-radius: 40px;height: 40px;border: solid 1px #1E1E1E">
-  </a>
-  
-  
-  
-   <a href="https://saicord.com/bn/tvplus/" style="display: block;margin-left: 5%;width: 26%;border-radius: 10px">
-    <img src="IMG_20220425_100950.jpg" style="border-radius: 40px;width:100%;height:40px;border: solid 1px #1E1E1E">
-  </a>
-</div>
-  
-   <div class="swiper mySwiper" style="margin-top: -1%">
-     <div class="swiper-wrapper">
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/tvplus/538-a-spark-story.html"><img src="20220305_103525.jpg">
-       </a>
-       </div>
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/tvplus/547-the-day-sports-stood-still.html"><img src="20220305_103552.jpg">
-       </a>
-       </div>
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/tvplus/403-strip-down-rise-up.html"><img src="20220305_103651.jpg">
-       </a>
-       </div>
-       
-       
-       <div class="swiper-slide">
-       <a href="https://saicord.com/bn/tvplus/601-my-name-is-pauli-murray.html"><img src="20220305_103714.jpg">
-       </a>
-       </div>
-       
-       
-            <div class="swiper-slide">
-       <a href="https://saicord.com/bn/tvplus/399-fake-famous.html"><img src="20220305_103759.jpg">
-       </a>
-       </div>
-       
-       
-          <div class="swiper-slide">
-       <a href="https://saicord.com/bn/tvplus/834-aksel.html"><img src="20220305_103819.jpg">
-       </a>
-       </div>
-       
-
-        <div class="swiper-slide">
-       <a href="https://saicord.com/bn/tvplus/"><img src="showmore.jpg">
-       </a>
-       </div>
-       
-       
-       
-       
-       
-       
-       
-       
-       
-     </div>
-     
-     
-    </div>
-   
-    <br><br>
-<div style="color: #fff;font-size: 110%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 2%">Comming Soon</div>
-
-
+<div style="color: #fff;font-size: 125%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 0%;text-shadow: 1px 1px 200px cyan;position: absolute">Live Tv</div>
+<div style="position: absolute;left: 74%;font-family: sans-serif;"><a href="tv.html" style="background-color: #101010;color: #101010;"><b style="color: #999999;font-weight:5000;font-size: 14px">SEE ALL</b></a></div>
 <br>
   
    <div class="swiper mySwiper">
      <div class="swiper-wrapper">
        
             <div class="swiper-slide">
-       <a href=""><img src="20220422_105027.png">
+       <a href="https://toffeelive.com/#video/ad2d89100e475427fae2882f2d5dcc36"><img src="20220425_143950.png">
        </a>
        </div>
        
             <div class="swiper-slide">
-       <a href=""><img src="20220422_105126.png">
-       </a>
-       </div>
-       
-            <div class="swiper-slide">
-       <a href=""><img src="20220422_105223.png">
+       <a href="https://toffeelive.com/#video/099586831cef7658bdcf9b1b2247947d"><img src="20220425_143711.png">
        </a>
        </div>
        
        
        <div class="swiper-slide">
-       <a href=""><img src="20220422_105252.png">
+       <a href="https://toffeelive.com/#video/591a488c7a7438e413fc196a049d3f07"><img src="20220425_143645.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/e9e003c325eec6946ed1d23c6ac90a21"><img src="20220425_143626.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/ab8f5789d340620b89a3ace8eb2fee47"><img src="20220425_143603.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/07983a0e0b03d2c989d05f5d907ee2b3"><img src="20220425_143533.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/5ba5aeb8d1e3b2366a6d5b91acfcb5f7"><img src="20220425_143419.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/2b786dfb89a71267ab89fda2675631b4"><img src="20220425_143331.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/63fa34a825c2e59da4819943bf09de69"><img src="20220425_143310.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/0a4869b78ba89886402d05bcb42721c7"><img src="/20220425_143223.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/fadeb64cdb2a22fcf19f0300c9d2e30b"><img src="20220425_143157.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/e8990b30cb5e46fd28e4c52c395f3263"><img src="20220425_143133.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/8bb5c4c835f12337beb4158fd658a3d1"><img src="20220425_143106.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/260f2c01cc46d0a08c6c7cc674f31351"><img src="20220425_144018.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/2c650e4449bd724407c4fc4d14f96074"><img src="20220425_143904.png">
+       </a>
+       </div>
+       
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/2c650e4449bd724407c4fc4d14f96074"><img src="20220425_143834.png">
+       </a>
+       </div>
+       
+       
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/c4007b19e06da78a3239a44be37bcf76"><img src="20220425_134328.png">
        </a>
        </div>
        
        
             <div class="swiper-slide">
-       <a href=""><img src="showmore.jpg">
+       <a href="https://toffeelive.com/#video/2907850d827f820b2f39dc29ed3dfa96"><img src="20220425_134304.png">
        </a>
        </div>
        
        
        
        
-       
-       
-       
-       
+        <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/9e2b55c048f7e1c20e3eb9c135d0af0b"><img src="20220425_134240.png">
+       </a>
+       </div>
+       <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/fc59fa460e9ee01e9896119e1840d511"><img src="20220425_142542.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/0bdfe2e55090d6be70793778d0d8e147"><img src="20220425_142512.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/ef9443bd581764b1a77b7de4cd0507a3"><img src="20220425_142438.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/4947c065a0a2d58f6e14bdae7242a562"><img src="20220425_142241.png">
+       </a>
+       </div>
+   
+           
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/0198902aad24dbd74a829847094f6311"><img src="20220425_133130.png">
+       </a>
+       </div>
+   <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/0bd0925e08eb597bd7e804d768fc207a"><img src="20220425_143735.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/4effc0b88d9c1125754425708f0f2452"><img src="20220425_141950.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/66f276916d5a97cbb3b0008213bda1c3"><img src="20220425_132922.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/20ae05a0a5206b0cb7f6bd0aba50227f"><img src="20220425_133409.png">
+       </a>
+       </div>
+   <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/a994b649ba44f2913f5d7ec45b5a55fc"><img src="20220425_133810.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/3c1ccc8ae801108389b8a86dd31a847f"><img src="20220425_133743.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/bbb26ea55a5b782dd33c2990388b3bee"><img src="20220425_133713.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/72a08c5d474efc2e7948c42da03cf563"><img src="20220425_133640.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/9905065e2878fb8c4eee1a91183432a8"><img src="20220425_133614.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/d581d1391302bbd278e49bb95d66e556"><img src="20220425_133318.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/2ea9504aba6d914cbc0468c06a9da2d7"><img src="20220425_133242.png">
+       </a>
+       </div><div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/e841f6eda20016f2373081e96b8c776c"><img src="20220425_142747.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/4a6ddb6cf5c34fbc975e6a282f63ff93"><img src="20220425_142631.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/1165948c063a887eaf4dcb354b300cc0"><img src="20220425_142604.png">
+       </a>
+       </div>
+<div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/5d50889672f6f860d14f502de3de1957"><img src="20220425_143043.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/2f1988e8715bb8695ba347d1c9747739"><img src="20220425_143023.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/e0e85c9f79e9f64c65b04ff180d55708"><img src="20220425_143002.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/cb074ff7d11bce13d426f1442ae82cd0"><img src="20220425_142910.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/18d591d8110952dd64ce20ba9b7df44f"><img src="20220425_142844.png">
+       </a>
+       </div><div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/4947c065a0a2d58f6e14bdae7242a562"><img src="20220425_142241.png">
+       </a>
+       </div>
+   
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/707e46017f6e9b4dcda37a761efbda57"><img src="20220425_142216.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/36fa8ce3ab4e89180247473a80feb232"><img src="20220425_134217.png">
+       </a>
+       </div>
+   
+   
+               <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/a6b5f149e6048f39dc0d451496130cc5"><img src="20220425_133346.png">
+       </a>
+       </div>
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/b872ee85433cf7d606ec2fe3507ef0fe"><img src="20220425_134124.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/f27d3a53af8884b6b8cf2ecc4c747d84"><img src="20220425_134056.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/3e8f38923fa5624620f9f54a2f03183f"><img src="20220425_134034.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/9c0107550f54f817b55d2cd47d95fe50"><img src="20220425_134007.png">
+       </a>
+       </div>
+   
+           
+   
+    <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/8442b87f2d35421a58ead01532b7069b"><img src="20220425_133910.png">
+       </a>
+       </div>
+   
+            <div class="swiper-slide">
+       <a href="https://toffeelive.com/#video/e4d0a10b5727e637659166049973ce56"><img src="20220425_133840.png">
+       </a>
+       </div>
+   
+           
+           
        
        
        
@@ -1341,25 +1348,139 @@ display: block;
      
      
     
-     
-     
    </div>
+<br><br>
+<div style="color: #fff;font-size: 125%;font-family: sans-serif;font-weight: 900;margin-left: 7%;margin-top: 0%;text-shadow: 1px 1px 200px cyan;position: absolute">Movie</div>
+<div style="position: absolute;left: 74%;font-family: sans-serif;"><a href="bangla.html" style="background-color: #101010;color: #101010;"><b style="color: #999999;font-weight:5000;font-size: 14px">SEE ALL</b></a></div>
+<br><br>
+
+<div class="splide" role="group" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+		<ul class="splide__list">
+		  
+			<li class="splide__slide">
+			    <a href="https://saicord.com/bn/movies/838-pushpa-the-rise-part-1.html"><img src="pushpa.jpg">
+       </a>
+      </li>
+
+      <li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/825-k-g-f-chapter-1.html"><img src="kgf.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/1086-maari-2.html"><img src="mari.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/4-ala-vaikunthapurramuloo.html"><img src="alavaikantum.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/138-bigil.html"><img src="bigil.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/841-akhanda.html"><img src="okhando.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/25-maharshi.html"><img src="20220425_104825.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/810-most-eligible-bachelor.html"><img src="20220425_104859.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/1148-mr-local.html"><img src="20220425_104926.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/895-90-ml.html"><img src="20220425_104953.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/189-sarileru-neekevvaru.html"><img src="20220425_105019.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/69-mersal.html"><img src="20220425_105054.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://youtu.be/qfyQUeR_uV8"><img src="20220422_104310.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://youtu.be/5pMGGQ0Q4kg"><img src="20220422_104330.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://youtu.be/Kz-3hDmnGDw"><img src="20220422_104354.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://youtu.be/2Nyw9dp-4Fw"><img src="20220422_104415.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://youtu.be/Ach2X6c8jYo"><img src="20220422_104443.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/animation/888-tom-and-jerry-cowboy-up.html"><img src="tomandjerry.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/animation/432-mortal-kombat-legends-battle-of-the-realms.html"><img src="mortal.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/animation/554-extinct.html"><img src="extinct.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://youtube.com/playlist?list=PLDowWaszrvJbva3R6UnP29KoVOTB4VL-p"><img src="golmal.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://youtube.com/playlist?list=PL5O3zv2ZcASjyDBGb0nrXuDcXzGBi0QeI"><img src="20220422_110847.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/tvplus/538-a-spark-story.html"><img src="20220305_103525.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/tvplus/547-the-day-sports-stood-still.html"><img src="20220305_103552.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/tvplus/403-strip-down-rise-up.html"><img src="20220305_103651.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/tvplus/601-my-name-is-pauli-murray.html"><img src="20220305_103714.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/tvplus/399-fake-famous.html"><img src="20220305_103759.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/tvplus/834-aksel.html"><img src="20220305_103819.jpg">
+       </a>
+      </li><li class="splide__slide">
+			  <a href=""><img src="20220422_105027.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href=""><img src="20220422_105126.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href=""><img src="20220422_105223.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href=""><img src="20220422_105252.png">
+       </a>
+      </li><li class="splide__slide">
+			  <a href="https://saicord.com/bn/movies/page/2/"><img src="showmore.jpg">
+       </a>
+
+			
+		</ul>
+  </div>
+</div>
+
+
 
    
    
-   
-   
-   
-   
-   
-  <div style="height: 14vh"></div>
+  <div style="height: 10vh"></div>
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
+ 
+ <script src="splide.min.js"></script>
+
   <script>
   
   
   var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 3,
+        slidesPerView: 5,
+        spaceBetween: 5,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -1430,10 +1551,34 @@ function mySearchFunction() {
 
 
 
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
 
 
 
 
+
+
+
+
+
+var splide = new Splide( '.splide', {
+  type   : 'loop',
+  padding: '0rem',
+} );
+splide.mount()
 
 
 </script>
